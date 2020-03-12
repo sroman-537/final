@@ -38,7 +38,12 @@ events_table.insert(title: "Paris",
 
 events_table.insert(title: "Bangkok", 
                     description: "The most eventful trip we've ever experienced!",
-                    date: "2016",
+                    date: "2014",
                     location: "Bangkok, Thailand")
+
+events_table.insert(title: "Kiliminjaro", 
+                    description: "Our unforgettable honeymoon trip!",
+                    date: "2016",
+                    location: "Kiliminjaro, Tanzania")
 
 puts "Success!"

@@ -28,18 +28,18 @@
         <% end %>
         <p class="mt-5">
             <% if @current_user %>
-                <a href="/events/<%= @event[:id] %>/rsvps/new" class="btn btn-primary">RSVP now!</a>
+                <a href="/events/<%= @event[:id] %>/rsvps/new" class="btn btn-primary">Submit Travel Opinion now!</a>
             <% else %>
-                <a href="/logins/new" class="btn btn-danger">Please sign in to RSVP</a>
+                <a href="/logins/new" class="btn btn-danger">Please sign in to provide travel opinion</a>
             <% end %>
         </p>
     </div>
     <div class="col-sm-3">
-        <h3>When?</h3>
+        <h3>Year?</h3>
         <p><%= @event[:date] %></p>
-        <h3>Where?</h3>
+        <h3>What cities?</h3>
         <p><%= @event[:location] %></p>
-        <h3>How many guests so far?</h3>
+        <h3>How many users would take the trip?</h3>
         <p><%= @going_count %></p>
     </div>
 </div>
