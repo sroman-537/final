@@ -6,6 +6,8 @@
         </h2>
         <h1><%= @event[:title] %></h1>
         <p><%= @event[:description] %></p>
+        <p><%= @event[:body] %></p>
+
 
         <% for rsvp in @rsvps %>
             <div class="media">
@@ -41,5 +43,7 @@
         <p><%= @event[:location] %></p>
         <h3>How many users would take the trip?</h3>
         <p><%= @going_count %></p>
+        <h3>Currency?</h3>
+        <p><%= @event[ :currency] %></p>
     </div>
 </div>
